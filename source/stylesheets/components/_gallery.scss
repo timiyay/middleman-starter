@@ -1,0 +1,17 @@
+.gallery {
+  position: relative;
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  @include scut-list-unstyled();
+
+  // Add a max-width value as an argument
+  @include scut-center-block();
+}
+
+.gallery-item {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  position: relative;
+}

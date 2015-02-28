@@ -1,0 +1,22 @@
+.hero {
+  position: relative;
+}
+
+.hero-inner {
+  @include container();
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  height: 100%;
+  text-align: center;
+}
+
+.hero-logo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-logo-image {
+  max-width: 100%;
+  height: auto;
+}

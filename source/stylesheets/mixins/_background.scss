@@ -1,0 +1,18 @@
+@mixin background-image($url, $fallbackColor: inherit) {
+  background-color: $fallbackColor;
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin background-sprite($sprite-map, $sprite-name, $repeat: no-repeat, $offset-x: 0, $offset-y: 0) {
+  background-image: $sprite-map;
+  background-repeat: $repeat;
+  @include sprite-background-position($sprite-map, $sprite-name, $offset-x, $offset-y);
+
+  // if no offsets given, set the dimensions of the element to match the image
+  // @if ($offset-x == 0 and $offset-y == 0) {
+  //   @include sprite-dimensions($sprite-map, $sprite-name);
+  // }
+}

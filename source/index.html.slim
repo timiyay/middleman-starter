@@ -1,0 +1,37 @@
+---
+middleman: frontmatter
+---
+
+doctype html
+html
+  head
+    title Page Title
+    = favicon_tag 'images/favicon.png'
+
+    / load Adobe Typekit fonts
+    / script src="//use.typekit.net/xxxxxxx.js"
+    / javascript:
+    /   try{Typekit.load();}catch(e){}
+
+    = stylesheet_link_tag 'main'
+
+  body
+
+    / Hero image
+    section.section.hero
+      .hero-inner
+        .hero-logo
+          / = image_tag 'logo.png', class: 'hero-logo-image'
+
+    / section
+    section.section
+      .section-inner
+        // Add section content
+
+    / footer
+    footer.footer
+      .footer-inner
+        p.footer-item
+        p.footer-item
+
+    = javascript_include_tag '/javascripts/main'

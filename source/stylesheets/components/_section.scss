@@ -1,0 +1,14 @@
+.section {
+  @include scut-clearfix;
+  padding: 0 $section-hGutter;
+}
+
+.section-inner {
+  @include container();
+  padding: $section-vGutter 0;
+  text-align: center;
+}
+
+.section-copy {
+  margin: 0;
+}
